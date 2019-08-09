@@ -18,7 +18,7 @@ module load java
 module load perl
 
 # Script:
-server=$SCRATCH
+server=$SCRATCH/'ProteinEmbedding'
 src_dir=$server/'onto2vec'
 data_dir=$server/'datasets/raw/yeast'
 work_dir=$src_dir/'work'

@@ -17,7 +17,7 @@ module load python/3.6.1
 
 
 # Script:
-server=$SCRATCH
+server=$SCRATCH/'ProteinEmbedding'
 data_dir=$server/'datasets/processed/yeast'
 emb_dir=$server/'embeddings/yeast'
 

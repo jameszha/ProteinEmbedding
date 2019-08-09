@@ -10,7 +10,7 @@
 #$ -m bea
 
 # Script:
-server=$SCRATCH
+server=$SCRATCH/'ProteinEmbedding'
 out_dir=$server/'datasets/raw/yeast'
 mkdir -p $out_dir
 
