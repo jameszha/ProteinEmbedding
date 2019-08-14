@@ -7,6 +7,16 @@ However, in order to be analyzed via computational means, proteins must first be
 
 Here, we utilize two natural language processing (NLP) methods to embed proteins into dense vector representations. In the first method, dubbed Onto2Vec4, the structure of the GO graph, with accompanying protein annotations, is described in a series of sentences. Word embeddings of each protein are generated using Word2Vec. In the second method2, sentence embeddings of GO term definitions are inputted into a graph convolutional network (GCN) trained on entailment relationships of GO terms. Protein embeddings are calculated from GO term embeddings taken from the embedding layer. 
 
+## Table of contents
+<!--ts-->
+   * [Dependencies](#dependencies)
+   * [Running the code](#running)
+   * [Running code on UCLA's Hoffman2 cluster](#hoffman)
+   * [Dat Duong's GO term embeddings](#dat)
+   * [Options for evaluate_embeddings.py](#evaluate)
+<!--te-->
+
+<a name="dependencies"></a>
 ## Dependencies
 ```
 Groovy
@@ -21,6 +31,8 @@ scikit-learn
 scipy
 numpy
 ```
+
+<a name="running"></a>
 ## Running the code
 - Navigate to the ```scripts/``` directory.
 - Change the ```server``` variable within each of the 6 scripts to point to this repository.
@@ -43,6 +55,7 @@ $ ./run_eval_types.sh
 $ ./run_eval_ec.sh
 ```
 
+<a name="hoffman"></a>
 ## Running code on UCLA's Hoffman2 cluster
 Running this code is extremely simple on UCLA's Hoffman2 cluster. Simply clone the repository into your scratch directory. Then, submit each script (in the order specified above) as a job using
 ```
@@ -50,6 +63,7 @@ qsub <script.sh>
 ```
 The computing resources required per job are already built into each of the scripts. 
 
+<a name="dat"></a>
 ## Dat Duong's GO term embeddings
 One of the methods explored utilized Dat Duong's (Department of Computer Science, UCLA) sentence embedding GCN method. Due to the immensely high overhead (30 minutes per epoch) of generating the class embeddings via this method, the embeddings have been provided. You can download them from:
 
@@ -59,6 +73,7 @@ You should download them into ```ProteinEmbedding/embeddings/yeast/```. This wil
 
 Note that this is not required to generate and evaluate the remainder of the embeddings.
 
+<a name="evaluate"></a>
 ## Options for evaluate_embeddings.py
 Each of the three tasks (binary PPI prediction, PPI type classification, and EC number classification), are evaluated using evaluate_embeddings.py. This script has several key options:
 - Use ```-s``` to save the different classifiers. This will allow you to only have to perform training once. 
