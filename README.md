@@ -44,12 +44,18 @@ $ ./run_eval_ec.sh
 ```
 
 ## Running code on UCLA's Hoffman2 cluster
-Running this code is extremely simple on UCLA's Hoffman2 cluster. Simply clone the repository into your scratch directory. Then, submit each script as a job using
+Running this code is extremely simple on UCLA's Hoffman2 cluster. Simply clone the repository into your scratch directory. Then, submit each script (in the order specified above) as a job using
 ```
 qsub <script.sh>
 ```
+The computing resources required per job are already built into each of the scripts. 
 
-
-
-
+## Options for evaluate_embeddings.py
+Each of the three tasks (binary PPI prediction, PPI type classification, and EC number classification), are evaluated using evaluate_embeddings.py. This script has several key options:
+- Use ```-s``` to save the different classifiers. This will allow you to only have to perform training once. 
+- Use ```-l``` to load the pretrained classifiers in.
+- ```-p``` allows you to plot the ROC curve. You must specify a line name using ```-ln``` and optionally specify a line color using ```-lc```. 
+- The ROC curve can be saved to a pickle file with ```-ps``` or exported to a .PNG using ```-pe```. 
+- To plot the curves for different embedding types in the same plots, simply load the pickled ROC using ```-pl```.
+By default, the provided script will train each classifier for each embedding type, then produce a plot with the ROCs of all embedding types on top of one another.
 
