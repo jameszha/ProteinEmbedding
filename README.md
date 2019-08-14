@@ -51,9 +51,13 @@ qsub <script.sh>
 The computing resources required per job are already built into each of the scripts. 
 
 ## Dat Duong's GO term embeddings
-One of the methods explored utilized Dat Duong's (Department of Computer Science, UCLA) sentence embedding GCN method. Due to the immensely high overhead (30 minutes per epoch) of generating the class embeddings via this method, the embeddings have been provided. 
-You can download them from https://drive.google.com/open?id=1wjgatOZYlzMxtkOsA_neeN8_ZmnGBMCJ
+One of the methods explored utilized Dat Duong's (Department of Computer Science, UCLA) sentence embedding GCN method. Due to the immensely high overhead (30 minutes per epoch) of generating the class embeddings via this method, the embeddings have been provided. You can download them from:
+
+https://drive.google.com/open?id=1wjgatOZYlzMxtkOsA_neeN8_ZmnGBMCJ
+
 You should download them into ```ProteinEmbedding/embeddings/yeast/```. This will allow the provided to scripts to run with these embeddings. 
+
+Note that this is not required to generate and evaluate the remainder of the embeddings.
 
 ## Options for evaluate_embeddings.py
 Each of the three tasks (binary PPI prediction, PPI type classification, and EC number classification), are evaluated using evaluate_embeddings.py. This script has several key options:
