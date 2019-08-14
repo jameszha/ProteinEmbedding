@@ -23,7 +23,7 @@ numpy
 ```
 ## Running the code
 - Navigate to the ```scripts/``` directory.
-- Change the ```server``` variable within each of the 5 scripts to point to this repository.
+- Change the ```server``` variable within each of the 6 scripts to point to this repository.
 - Download the yeast dataset using
 ```
 $ ./download_yeast_datasets.sh
