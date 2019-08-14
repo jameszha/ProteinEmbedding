@@ -1,0 +1,55 @@
+Loading data . . . 
+Partitioning data into training/testing sets . . . 
+Training samples loaded: 7518
+Testing samples loaded: 3222
+TESTING DEFAULT PARAMETERS . . .
+
+Testing Logistic Regression . . . 
+              precision    recall  f1-score   support
+
+           0       0.53      0.52      0.52      1566
+           1       0.55      0.56      0.56      1656
+
+    accuracy                           0.54      3222
+   macro avg       0.54      0.54      0.54      3222
+weighted avg       0.54      0.54      0.54      3222
+
+Time taken: 0.7894494533538818 seconds
+
+Testing Random Forest . . . 
+              precision    recall  f1-score   support
+
+           0       0.58      0.70      0.63      1566
+           1       0.65      0.52      0.58      1656
+
+    accuracy                           0.61      3222
+   macro avg       0.61      0.61      0.61      3222
+weighted avg       0.61      0.61      0.61      3222
+
+Time taken: 1.2415862083435059 seconds
+
+Testing SVM . . . 
+              precision    recall  f1-score   support
+
+           0       0.53      0.55      0.54      1566
+           1       0.56      0.54      0.55      1656
+
+    accuracy                           0.54      3222
+   macro avg       0.54      0.54      0.54      3222
+weighted avg       0.54      0.54      0.54      3222
+
+Time taken: 58.192758321762085 seconds
+
+Testing MLP  . . . 
+              precision    recall  f1-score   support
+
+           0       0.56      0.58      0.57      1566
+           1       0.59      0.58      0.58      1656
+
+    accuracy                           0.58      3222
+   macro avg       0.58      0.58      0.58      3222
+weighted avg       0.58      0.58      0.58      3222
+
+Time taken: 789.7920889854431 seconds
+
+Total time taken: 853.1121733188629 seconds

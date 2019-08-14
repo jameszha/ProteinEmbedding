@@ -1,0 +1,68 @@
+Loading data . . . 
+Partitioning data into training/testing sets . . . 
+Training samples loaded: 20884
+Testing samples loaded: 8951
+TESTING DEFAULT PARAMETERS . . .
+
+Testing Logistic Regression . . . 
+              precision    recall  f1-score   support
+
+           0       0.26      0.16      0.20       353
+           1       0.58      0.68      0.62      4310
+           2       0.32      0.27      0.29      1945
+           3       0.35      0.31      0.33      2215
+           4       0.26      0.11      0.15       128
+
+    accuracy                           0.47      8951
+   macro avg       0.35      0.31      0.32      8951
+weighted avg       0.45      0.47      0.45      8951
+
+Time taken: 8.9434175491333 seconds
+
+Testing Random Forest . . . 
+              precision    recall  f1-score   support
+
+           0       0.26      0.20      0.22       353
+           1       0.57      0.65      0.61      4310
+           2       0.30      0.28      0.29      1945
+           3       0.31      0.26      0.28      2215
+           4       0.23      0.11      0.15       128
+
+    accuracy                           0.45      8951
+   macro avg       0.33      0.30      0.31      8951
+weighted avg       0.43      0.45      0.44      8951
+
+Time taken: 23.343208074569702 seconds
+
+Testing SVM . . . 
+              precision    recall  f1-score   support
+
+           0       0.22      0.23      0.23       353
+           1       0.55      0.67      0.61      4310
+           2       0.31      0.26      0.28      1945
+           3       0.34      0.26      0.29      2215
+           4       0.19      0.12      0.15       128
+
+    accuracy                           0.45      8951
+   macro avg       0.32      0.31      0.31      8951
+weighted avg       0.43      0.45      0.44      8951
+
+Time taken: 17596.573664188385 seconds
+
+Testing MLP  . . . 
+              precision    recall  f1-score   support
+
+           0       0.29      0.28      0.29       353
+           1       0.60      0.57      0.58      4310
+           2       0.30      0.32      0.31      1945
+           3       0.30      0.32      0.31      2215
+           4       0.21      0.19      0.20       128
+
+    accuracy                           0.44      8951
+   macro avg       0.34      0.34      0.34      8951
+weighted avg       0.44      0.44      0.44      8951
+
+Time taken: 4306.508396148682 seconds
+
+Total time taken: 22081.383630514145 seconds
+ds

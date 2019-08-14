@@ -1,0 +1,75 @@
+Loading data . . . 
+Partitioning data into training/testing sets . . . 
+Training samples loaded: 938
+Testing samples loaded: 402
+TESTING DEFAULT PARAMETERS . . .
+
+Testing Logistic Regression . . . 
+              precision    recall  f1-score   support
+
+           1       0.00      0.00      0.00        52
+           2       0.43      0.99      0.60       171
+           3       0.00      0.00      0.00       100
+           4       0.00      0.00      0.00        26
+           5       0.00      0.00      0.00        16
+           6       0.00      0.00      0.00        30
+           7       0.00      0.00      0.00         7
+
+    accuracy                           0.42       402
+   macro avg       0.06      0.14      0.09       402
+weighted avg       0.18      0.42      0.25       402
+
+Time taken: 0.13167142868041992 seconds
+
+Testing Random Forest . . . 
+              precision    recall  f1-score   support
+
+           1       0.18      0.21      0.20        52
+           2       0.46      0.64      0.53       171
+           3       0.32      0.30      0.31       100
+           4       0.00      0.00      0.00        26
+           5       0.00      0.00      0.00        16
+           6       0.40      0.07      0.11        30
+           7       0.00      0.00      0.00         7
+
+    accuracy                           0.38       402
+   macro avg       0.20      0.17      0.17       402
+weighted avg       0.33      0.38      0.34       402
+
+Time taken: 0.11745285987854004 seconds
+
+Testing SVM . . . 
+              precision    recall  f1-score   support
+
+           1       0.00      0.00      0.00        52
+           2       0.43      1.00      0.60       171
+           3       0.00      0.00      0.00       100
+           4       0.00      0.00      0.00        26
+           5       0.00      0.00      0.00        16
+           6       0.00      0.00      0.00        30
+           7       0.00      0.00      0.00         7
+
+    accuracy                           0.43       402
+   macro avg       0.06      0.14      0.09       402
+weighted avg       0.18      0.43      0.25       402
+
+Time taken: 0.456188440322876 seconds
+
+Testing MLP  . . . 
+              precision    recall  f1-score   support
+
+           1       0.24      0.19      0.21        52
+           2       0.45      0.34      0.39       171
+           3       0.24      0.55      0.34       100
+           4       0.00      0.00      0.00        26
+           5       0.00      0.00      0.00        16
+           6       0.00      0.00      0.00        30
+           7       0.00      0.00      0.00         7
+
+    accuracy                           0.31       402
+   macro avg       0.13      0.15      0.13       402
+weighted avg       0.28      0.31      0.28       402
+
+Time taken: 24.88144063949585 seconds
+
+Total time taken: 25.762433528900146 seconds
