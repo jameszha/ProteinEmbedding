@@ -11,7 +11,7 @@ Here, we utilize two natural language processing (NLP) methods to embed proteins
 <!--ts-->
    * [Dependencies](#dependencies)
    * [Running the code](#running)
-   * [Running code on UCLA's Hoffman2 cluster](#hoffman)
+      * [Running code on UCLA's Hoffman2 cluster](#hoffman)
    * [Dat Duong's GO term embeddings](#dat)
    * [Options for evaluate_embeddings.py](#evaluate)
 <!--te-->
@@ -56,7 +56,7 @@ $ ./run_eval_ec.sh
 ```
 
 <a name="hoffman"></a>
-## Running code on UCLA's Hoffman2 cluster
+### Running code on UCLA's Hoffman2 cluster
 Running this code is extremely simple on UCLA's Hoffman2 cluster. Simply clone the repository into your scratch directory. Then, submit each script (in the order specified above) as a job using
 ```
 qsub <script.sh>
