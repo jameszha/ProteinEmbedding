@@ -41,4 +41,4 @@ python3 $src_dir/'get_ec_numbers.py' -e $data_dir/'enzyme.dat' -p $out_dir/'prot
 # Extract interaction types
 # Optionally take a random subset, as there are over 400,000 samples
 python3 $src_dir/'convert_actions_string_to_uniprot.py' $data_dir/'4932.protein.actions.v11.0.txt' -m $src_dir/'yeast_string_to_uniprot.mapping' -o $out_dir/'all_protein_action_types.lst'
-shuf -n 30000 $out_dir/'all_protein_action_types.lst' > $out_dir/'protein_action_types.lst'
+shuf -n 10000 $out_dir/'all_protein_action_types.lst' > $out_dir/'protein_action_types.lst'
